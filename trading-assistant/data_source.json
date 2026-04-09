@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "primary": {
+    "name": "QVeris",
+    "enabled": true,
+    "api_key_env": "QVERIS_API_KEY",
+    "tool_script": "~/.openclaw/skills/qveris/scripts/qveris_tool.mjs"
+  },
+  "fallback": {
+    "name": "Cache",
+    "enabled": true,
+    "max_age_minutes": 30
+  },
+  "cache": {
+    "enabled": true,
+    "ttl_minutes": 5,
+    "directory": "./cache"
+  },
+  "data_sources": {
+    "a_share": {
+      "provider": "QVeris",
+      "tool": "ths_ifind.real_time_quotation.v1",
+      "description": "同花顺iFinD A股实时行情"
+    },
+    "us_stock": {
+      "provider": "QVeris", 
+      "tool": "eodhd.live_prices.retrieve.v1",
+      "description": "EODHD 美股实时行情"
+    },
+    "index": {
+      "provider": "QVeris",
+      "tool": "ths_ifind.index_quotation.v1",
+      "description": "指数行情"
+    }
+  }
+}

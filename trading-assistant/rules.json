@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0",
+  "rules": [
+    {
+      "id": "rule_001",
+      "name": "突破前高",
+      "description": "价格突破20日新高",
+      "condition": "price > max_high_20days * 1.02",
+      "action": "alert",
+      "priority": "high",
+      "enabled": true
+    },
+    {
+      "id": "rule_002",
+      "name": "放量突破",
+      "description": "价格上涨且成交量超过5日均量1.5倍",
+      "condition": "price_change > 0.02 AND volume > avg_volume_5days * 1.5",
+      "action": "alert",
+      "priority": "high",
+      "enabled": true
+    },
+    {
+      "id": "rule_003",
+      "name": "跌破支撑",
+      "description": "价格跌破关键支撑位",
+      "condition": "price < support_level * 0.98",
+      "action": "alert",
+      "priority": "high",
+      "enabled": true
+    },
+    {
+      "id": "rule_004",
+      "name": "观察位上破",
+      "description": "价格突破用户设定的上观察位",
+      "condition": "price > observation_upper",
+      "action": "alert",
+      "priority": "medium",
+      "enabled": true
+    },
+    {
+      "id": "rule_005",
+      "name": "观察位下破",
+      "description": "价格跌破用户设定的下观察位",
+      "condition": "price < observation_lower",
+      "action": "alert",
+      "priority": "medium",
+      "enabled": true
+    }
+  ]
+}

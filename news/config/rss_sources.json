@@ -1,0 +1,19 @@
+{
+  "macro": [
+    {"name": "财新宏观", "url": "https://www.caixin.com/rss/macroeconomy.xml", "priority": "high"},
+    {"name": "华尔街见闻", "url": "https://wallstreetcn.com/rss/global", "priority": "high"},
+    {"name": "央行官网", "url": "http://www.pbc.gov.cn/rss/Focus.xml", "priority": "high"}
+  ],
+  "finance": [
+    {"name": "财新金融", "url": "https://www.caixin.com/rss/finance.xml", "priority": "high"},
+    {"name": "财新股市", "url": "https://www.caixin.com/rss/markets.xml", "priority": "high"},
+    {"name": "FT中文网", "url": "https://www.ftchinese.com/rss/feed", "priority": "medium"},
+    {"name": "Bloomberg", "url": "https://feeds.bloomberg.com/markets/news.rss", "priority": "medium"}
+  ],
+  "tech": [
+    {"name": "财新TMT", "url": "https://www.caixin.com/rss/tech.xml", "priority": "high"}
+  ],
+  "energy": [
+    {"name": "财新能源", "url": "https://www.caixin.com/rss/energy.xml", "priority": "medium"}
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-03-18T10:12:00",
+  "watchlist": [
+    {
+      "id": "watch_001",
+      "symbol": "000001",
+      "name": "平安银行",
+      "market": "A股",
+      "sector": "银行",
+      "exchange": "SZ",
+      "added_at": "2026-03-09T15:30:00",
+      "observation_levels": {
+        "upper": 12.50,
+        "lower": 10.50,
+        "stop_loss": 9.80,
+        "take_profit": 15.00
+      },
+      "position": {
+        "quantity": 1000,
+        "cost_price": 11.00,
+        "total_cost": 11000.00
+      },
+      "notes": "长期持有，关注政策动向",
+      "tags": ["银行", "价值股", "高股息"]
+    },
+    {
+      "id": "watch_002",
+      "symbol": "600519",
+      "name": "贵州茅台",
+      "market": "A股",
+      "sector": "白酒",
+      "exchange": "SH",
+      "added_at": "2026-03-09T15:30:00",
+      "observation_levels": {
+        "upper": 1800.00,
+        "lower": 1500.00,
+        "stop_loss": 1400.00,
+        "take_profit": 2000.00
+      },
+      "position": {
+        "quantity": 100,
+        "cost_price": 1600.00,
+        "total_cost": 160000.00
+      },
+      "notes": "核心资产，长期配置",
+      "tags": ["白酒", "核心资产", "消费"]
+    },
+    {
+      "id": "watch_003",
+      "symbol": "AU2506",
+      "name": "沪金2506",
+      "market": "期货",
+      "sector": "贵金属",
+      "exchange": "SHFE",
+      "added_at": "2026-03-18T10:12:00",
+      "observation_levels": {
+        "upper": 1109.00,
+        "lower": 1050.00,
+        "stop_loss": 1020.00,
+        "take_profit": 1150.00
+      },
+      "position": null,
+      "notes": "监控1109关键价位突破",
+      "tags": ["黄金", "期货", "贵金属"]
+    }
+  ],
+  "notification_settings": {
+    "morning_briefing": {
+      "enabled": true,
+      "include_sector_overview": true,
+      "include_watchlist_signals": true,
+      "max_items": 10
+    },
+    "intraday_check": {
+      "enabled": true,
+      "alert_on_price_break": true,
+      "alert_on_volume_spike": true,
+      "max_alerts_per_check": 5
+    },
+    "evening_summary": {
+      "enabled": true,
+      "include_pnl_summary": true,
+      "include_tomorrow_watch": true
+    }
+  },
+  "trading_settings": {
+    "market": "A股",
+    "timezone": "Asia/Shanghai",
+    "trading_days": "1-5",
+    "trading_hours": {
+      "morning": ["09:30", "11:30"],
+      "afternoon": ["13:00", "15:00"]
+    }
+  }
+}

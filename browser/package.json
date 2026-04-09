@@ -1,0 +1,7 @@
+{
+  "name": "browser-skill",
+  "version": "1.0.0",
+  "dependencies": {
+    "puppeteer": "^21.11.0"
+  }
+}
